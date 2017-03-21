@@ -711,7 +711,7 @@ def main(argv):
         # Run Analyze based on the  Stats off Metrics table
         run_analyze(master_conn)
     else:
-        comment("anlayze flag arg is set as %s.Analyze is not performed." % (analyze_flag))
+        comment("analyze flag arg is set as %s.Analyze is not performed." % (analyze_flag))
 
     comment('Processing Complete')
     cleanup()
