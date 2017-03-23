@@ -257,6 +257,16 @@ sudo yum install postgresql postgresql-devel gcc python-devel
 sudo pip install PyGreSQL 
 ```
 
+### Mac
+
+Installing PyGreSQL requires `pg_config`, which is available from the Homebrew `postgresql` recipe:
+
+```
+# Install Homebrew per the instructions at [https://brew.sh/](https://brew.sh/)
+brew install postgresql
+pip install PyGreSQL
+```
+
 ## Limitations
 
 1. Script runs all VACUUM commands sequentially. Currently in Redshift multiple concurrent vacuum operations are not supported. 
